@@ -5,11 +5,10 @@ async function getPlanetById(id) {
   try {
     const url = `https://swapi.dev/api/planets/${id}/`
     const response = await axios.get(url)
-     console.log("response.data", response.data)
     return response.data
    
   } catch (error) {
-    console.error(`❌ Erro ao buscar planeta: ${error.message}`)
+    console.error(` Erro ao buscar planeta: ${error.message}`)
     throw new Error('Falha ao buscar dados do planeta')
   }
 }
