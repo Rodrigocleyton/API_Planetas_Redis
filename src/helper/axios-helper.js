@@ -5,4 +5,4 @@ const swapi = axios.create({
      timeout: 10000
 })
 
-module.exports = { swapi }
+module.exports = { swapi}

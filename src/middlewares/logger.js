@@ -6,7 +6,7 @@ const requestLogger = (req, res, next) => {
             level: 'INFO',
             ts: new Date().toISOString(),
             method: req.method,
-            path: req.originalurl,
+            path: req.originalUrl,
             status: res.statusCode,
             ms
         }
